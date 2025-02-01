@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trail of Light</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- START SCREEN -->
+  <div id="start-screen" class="start-screen">
+    <h1>Trail of Light</h1>
+    <p>
+      In a world trapped in endless night, Umbra has stolen the final starry glow.
+      Minka, a stray cat with bioluminescent eyes, must rescue her friend Lux—the
+      last spark of hope.
+    </p>
+    <p>
+      Press <strong>SPACE</strong> to jump and avoid Umbra’s monstrous minions.
+      Collect <strong>10 light fragments</strong> to restore hope. If a monster catches you,
+      the darkness triumphs.
+    </p>
+    <p class="blink">
+      Press <strong>SPACE</strong> to Begin
+    </p>
+  </div>
+
+  <!-- END SCREEN (Shown upon victory) -->
+  <div id="end-screen" class="end-screen hidden">
+    <h2>Victory!</h2>
+    <p>
+      You’ve reclaimed a piece of the stolen light, rescuing Lux from Umbra’s grasp…
+      for now. Though the darkness still looms, your courage has kindled new hope.
+    </p>
+    <p class="blink">
+      Press <strong>SPACE</strong> to Play Again
+    </p>
+  </div>
+
+  <!-- GAME SECTION (Initially hidden) -->
+  <header id="game-header" class="hidden">
+    <h1>Trail of Light</h1>
+  </header>
+  <main id="game-container" class="hidden">
+    <canvas id="game"></canvas>
+  </main>
+
+  <!-- Main game script -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>
