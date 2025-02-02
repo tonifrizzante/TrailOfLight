@@ -1,0 +1,107 @@
+/* General Reset */
+body, h1, p, canvas {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(75, 37, 172);
+  color: rgb(251, 188, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+/* START SCREEN */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(75, 37, 172);
+  color: rgb(251, 188, 0);
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.start-screen h1 {
+  font-size: 3rem;
+  color: rgb(251, 188, 0);
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 1rem;
+}
+
+.start-screen p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  line-height: 1.4;
+}
+
+/* END SCREEN */
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(75, 37, 172);
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.end-screen h2 {
+  font-size: 2.5rem;
+  color: rgb(251, 188, 0);
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 1rem;
+}
+
+.end-screen p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  line-height: 1.4;
+}
+
+/* Shared blinking text for start and end screens */
+.blink {
+  animation: blink 1.5s infinite alternate;
+}
+
+/* Blink animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* Hide elements by default */
+.hidden {
+  display: none;
+}
+
+/* GAME CANVAS */
+canvas {
+  background: url("images/background.png") no-repeat center center;
+  background-size: cover;
+  border: 3px solid rgb(251, 188, 0);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  display: block;
+  margin-top: 20px;
+  width: 1600px;
+  height: 800px;
+}
